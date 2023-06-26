@@ -1,0 +1,1267 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+html{
+    width: 100%;    
+}
+
+body{
+    background-color: white;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* EL HEADER -------------------------------------------- */
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100vw;
+    height: 80px;
+    color: grey;
+    font-size: 14px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 10;
+}
+
+.nav{
+    position: relative;
+    left: 0;
+}
+.burger{
+    display: none;
+}
+
+img{
+    margin: 20px 30px;
+    cursor: pointer;
+}
+
+.header__list{
+    list-style-type: none;
+    
+    display: flex;
+    flex-direction: row;
+
+}
+
+.header__item{
+    margin: 20px;
+}
+
+.header__link{
+    text-decoration: none;
+    color: black;
+}
+
+.header__link_connect{
+    text-decoration: none;
+    color: #6461ff;
+}
+
+
+.header__link:hover{
+    color: #6461ff;
+}
+
+main{
+    margin-top: 80px;
+}
+
+.header__link_subscribe{
+    text-decoration: none;
+
+    width: 100px;
+    background-color: #6461ff;
+    color: white;
+    font-size: 16px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 8px 15px;
+    transition: 250ms;
+
+}
+
+.header__link_subscribe:hover{
+    background-color: #24006d;
+}
+
+.header__link_contact{
+    text-decoration: none;
+
+    width: 100px;
+    background-color: #f1f0f5;
+    color: #6461ff;
+    font-size: 16px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 8px 15px;
+    transition: 250ms;
+
+}
+
+.header__link_contact:hover{
+    background-color: #6461ff;
+    color: white;
+}
+
+
+
+/* LE MAIN -------------------------------------------- */
+
+/* INTRO ----------------------- */
+
+.section__intro{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 50px;
+    box-sizing: border-box;
+}
+
+article{
+    display: block;
+    padding: 50px;
+}
+
+.img{
+    display: block;
+    width:720px;
+    height:auto;
+}
+
+h1,h2{
+    font-size: 48px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+.intro__list{
+    list-style-type: none;
+    margin-bottom: 60px;
+    padding: 0px;
+}
+
+.intro__item{
+    font-size: 16px;
+    margin: 10px;
+    background: url("img/check.svg") no-repeat center left;
+    padding-left: 30px;
+}
+
+
+
+.btn {
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    background-color: #6461ff;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 16px 30px 16px 16px;
+    transition: 250ms;
+    margin: 0 15px 15px 0;
+}
+
+.btn::after {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 10px;
+    content: "";
+    border-right: 3px solid white; 
+    border-bottom: 3px solid white;
+    height: 6px;
+    width: 6px;
+    transform: rotate(-45deg);
+}
+
+.btn.btn__second {
+    background-color: #f1f0f5;
+    color: #6461ff;
+}
+
+.btn.btn__second::after {
+    border-color: #6461ff; 
+}
+
+.btn:hover {
+    background-color: #24006d;
+}
+
+.btn.btn__second:hover {
+    background-color: #6461ff;
+    color: white;
+}
+
+.btn.btn__second:hover::after {
+    border-color: white; 
+}
+
+
+/* VIDEO ----------------------- */
+
+
+.section__video{
+    position: relative;
+
+    width: 100%;
+    height: 869px;
+    background-color: #f1f0f5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.video__video{
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.video__bg{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    transform: translate(30px, 20px);
+}
+
+
+
+/* JOB ----------------------- */
+
+.section__job{
+    height: 482px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding: 0px 100px;
+} 
+
+.job__title{
+    width: 40%;
+
+    display: flex;
+    justify-content: center; 
+    padding-bottom: 100px;
+}
+
+.job__desc{
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+.job__p{
+    margin-bottom: 16px;
+}
+
+/* DOMAINES ----------------------- */
+
+.section__domaines{
+    position: relative;
+    width: 100%;
+    height: 575px;
+    background-color: #6461ff;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.domaines__img{
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background: url("https://www.elodge.fr/assets/img/bg_man.jpg") no-repeat center center;
+    background-size: cover;
+    
+}
+
+.domaines__list{
+    list-style-type: none;
+    display: inline-block;
+    position: absolute; 
+    left: 50%;
+
+    width: 41%;
+    text-align: center;
+    
+    display:flex ;
+    flex-wrap: wrap;
+}
+
+.domaines__list>li{
+    display: inline-block;
+    position: relative;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 16px 24px 16px 42px;
+    margin: 5px;
+}
+
+.domaines__list>li.recrutement::before{
+    content: url(../exo/img/expertise.svg);
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding-right: 40px;
+}
+
+.domaines__list>li.communication::before{
+    content: url(../exo/img/expertise_01.svg);
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding-right: 40px;
+}
+
+
+
+.domaines__list>li.conseil::before{
+    content: url(../exo/img/expertise_02.svg);
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding-right: 40px;
+}
+
+.domaines__list>li.droit::before{
+    content: url(../exo/img/expertise_03.svg);
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding-right: 40px;
+}
+
+.domaines__list>li.formation::before{
+    content: url(../exo/img/expertise_04.svg);
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding-right: 40px;
+}
+
+
+.domaines__list>li.paie::before{
+    content: url(../exo/img/expertise_05.svg);
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding-right: 40px;
+}
+
+
+
+.domaines__list>li.relations::before{
+    content: url(../exo/img/expertise_06.svg);
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding-right: 40px;
+}      
+
+
+.domaines__list>li.remuneration::before{
+    content: url(../exo/img/expertise_07.svg);
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding-right: 40px;
+}
+
+
+/* ACCOMPAGNEMENT ----------------------- */
+
+.accompagnement{
+    position: relative;
+    width: 100%;
+
+    display: block;
+}
+.accompagnement__title{
+    font-size: 48px;
+    text-align: center;
+    max-width: 70%;
+    margin-bottom: 50px;
+}
+
+.accompagnement__container{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    padding: 140px;
+    
+}
+
+
+.accompagnement__item_haut{
+    display: inline-block;
+    position: relative;
+
+    width: 354px;
+    height: 210px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: white;
+
+    background-color: #6461ff;
+    background-image: url("../exo/img/bg-client-01.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+
+    margin-right: 10px;
+
+}
+
+
+.accompagnement__item_haut:nth-child(2) {
+    background-color: #01065B;
+    background-image: url("../exo/img/bg-client-02.svg");
+  }
+
+.accompagnement__item_haut:nth-child(3) {
+    background-color: #0BC1CB;
+    background-image: url("../exo/img/bg-client-03.svg");
+  }
+
+.accompagnement__item_bas{
+    display: inline-block;
+    position: relative;
+
+    width: 354px;
+    height: 210px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: white;
+
+    background-color: #ffe344;
+    background-image: url("../exo/img/bg-client-04.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+
+    margin-right: 10px;
+
+}
+
+.accompagnement__item_bas:nth-child(2) {
+    background-color: #DACBB9;
+    background-image: url("../exo/img/bg-client-05.svg");
+  }
+
+.accompagnement__item_bas:nth-child(3) {
+    background-color: #6461ff;
+    background-image: none;
+  }
+
+  .accompagnement__name{
+    position: relative;
+    top: -25px;
+    left: 24px;
+
+    font-size: 18px;
+    line-height: 22px;
+    width: 294px;
+    height: 48px;
+    padding-left: 60px;
+
+    background-repeat: no-repeat;
+    background-position: left center;
+
+  }
+
+.dominique{
+    background-image: url("../exo/img/avatar-client-01.png");
+  }
+
+  .elodie {
+    background-image: url("../exo/img/avatar-client-02.png");
+
+  }
+
+  .thierry {
+    background-image: url("../exo/img/avatar-client-03.png");
+  }
+
+  .jeanmich {
+    background-image: url("../exo/img/avatar-client-04.png");
+  }
+
+  .nicolas {
+    background-image: url("../exo/img/avatar-client-05.png");
+  }
+
+  .katell {
+    background-image: url("../exo/img/avatar-client-06.png");
+  }
+
+  .accompagnement__p{
+    display: inline-block;
+    position: relative;
+    top: -16px;
+    left: 9%;
+
+    font-size: 16px;
+    width: 294px;
+    height: 78px;
+    line-height: 25px;
+    margin: 0;
+
+  }
+
+  .haut{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    left: -15px;
+
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .bas{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    left: 55px;
+
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+
+/* EKIP ----------------------- */
+
+.equipe{
+    background-color: #f1f0f5;
+    background-image: url(../exo/img/bg-advisor.svg);
+    background-repeat: no-repeat;
+    background-position: right 12%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    padding-bottom: 120px;
+}
+
+.equipe__container{
+    width: 60%;
+    margin: 120px 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.equipe__title{
+    font-size: 48px;
+    margin: 90px 0px 90px 0px;
+    margin-bottom: 96px;
+}
+
+.equipe__pages{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.equipe__implique{
+    display: inline-block;
+    width: 432px;
+    height: 632px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 90px;
+    box-sizing: border-box;
+    margin: 0px 24px 40px 24px;
+    box-shadow: 1px 14px 15px -6px rgba(0,0,0,0.6);
+
+    position: relative;
+    top: 0;
+    left: 0;
+
+}
+
+.equipe__h3{
+    font-size: 32px;
+    text-align: left;
+    padding-left: 50px;
+    margin: 0;
+    margin-bottom: 32px;
+
+    background-image: url("../exo/img/advisor_01.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.equipe__h4{
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.equipe__p{
+    color: #66656b;
+    margin: 0;
+    margin-bottom: 32px;
+}
+
+.equipe__pdiff{
+    color: #66656b;
+    margin: 0;
+}
+
+.equipe__independante{
+    position: relative;
+    top: 0px;
+    
+    display: inline-block;
+    width: 432px;
+    height: 632px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 90px;
+    box-sizing: border-box;
+    margin: 0px 24px 40px 24px;
+    box-shadow: 1px 14px 15px -6px rgba(0,0,0,0.6);
+    z-index: 5;
+
+    
+}
+
+.equipe__independante>.equipe__h3{
+    background-image: url("../exo/img/advisor_03.svg");
+}
+
+.equipe__exigeante{
+    position: relative;
+
+    display: inline-block;
+    width: 432px;
+    height: 632px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 90px;
+    box-sizing: border-box;
+    margin: 0px 24px 40px 24px;
+    box-shadow: 1px 14px 15px -6px rgba(0,0,0,0.6);
+
+}
+
+.equipe__exigeante>.equipe__h3{
+    background-image: url("../exo/img/advisor_02.svg");
+}
+
+
+/* LE FOOTER -------------------------------------------- */
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 461px;
+    padding: 100px 0px 150px;
+    box-sizing: border-box;
+    background-image: url("../exo/img/bg-footer.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    display: flex;
+}
+
+.footer__container{
+    position: relative;
+    width: 100%;
+    height: 211px;
+    padding-left: 100px;
+
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__logo{
+    width: 150px;
+    height: 50px;
+}
+
+.footer__listes{
+    width: 60%;
+    height: 211px;
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer__list{
+    list-style-type: none;
+    width: 20%;
+    height: 211px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    padding-left: 20px;
+
+    display: inline-block;
+}
+
+.footer__list_item{
+    padding-bottom: 20px;
+}
+
+.footer__h3{
+    font-size: 18px;
+    margin: 0;
+}
+
+.footer__link{
+    text-decoration: none;
+    color: #66656b;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:1440px){
+/* LE MAIN -------------------------------------------- */
+/* INTRO ------------------------- */
+
+article{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.img{
+    position: relative;
+    top: 0;
+    width: 50%;
+}
+.intro__company{
+    width: 173px;
+    position: relative;
+    left: -80px;
+}
+.intro__expert>.intro__p{
+    width: 100px;
+    position: relative;
+    top: -37px;
+    left: 140px;
+}
+.btn{
+    margin: 0px 0px 15px 0px;
+}
+.btn.btn__second{
+    margin: 0px 0px 15px 0px;
+}
+
+/* DOMAINES ------------------------- */
+.domaines__list{
+    left: 47%;
+    width: 40%;
+}
+
+
+/* EKIP ------------------------- */
+.equipe__container{
+    width: 75%;
+}
+
+.equipe__container{
+    width: 90%;
+    margin: 0;
+    padding: 0px 50px;
+}
+.equipe__pages{
+    width: 100%;
+    padding: 50px 0px;
+    justify-content: center;
+}
+
+
+
+/* FOOTER ------------------------- */
+.footer__listes{
+    width: 70%;
+}
+
+/* ACCOMPAGNEMENT ------------------------- */
+.accompagnement__container{
+    padding-top: 0px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1024px){
+
+/* HEADER -------------------------------------------- */
+.header__link_contact{
+    display: none;
+}
+
+/* LE MAIN -------------------------------------------- */
+/* INTRO ------------------------- */
+
+article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+}
+.img{
+    position: relative;
+    top: 0;
+    width: 50%;
+}
+
+.section__intro>article>h1{
+    font-size: 32px;
+}
+
+
+
+/* VIDEO ------------------------- */
+.video__video{
+    width: 90%;
+}
+
+/* JOB ------------------------- */
+.section__job{
+    padding: 60px;
+    display: inline-block;
+}
+.job__title{
+    width: 100%;
+    justify-content: flex-start;
+    padding-bottom: 0;
+    margin-bottom: 32px;
+
+}
+.job__desc{
+    width: 100%;
+}
+
+/* DOMAINES ------------------------- */
+.domaines__img{
+    width: 40%;
+    height: 100%;
+}
+.domaines__list{
+    width: 50%;
+    left: 40%;
+}
+
+/* ACCOMPAGNEMENT ------------------------- */
+.accompagnement{
+    align-items: flex-start;
+
+}
+
+.accompagnement__container{
+    padding: 60px 60px;
+}
+.accompagnement__title{
+    font-size: 34px;
+}
+.haut{
+    width: 100%;
+    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    left: 0;
+}
+.accompagnement__item_haut{
+    text-align: center;
+
+    margin-bottom: 18px;
+}
+.accompagnement__name{
+    text-align: left;
+}
+.accompagnement__p{
+    text-align: left;
+    left: 0;
+}
+
+.bas{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    left: 0;
+}
+
+.accompagnement__item_bas{
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+
+/* EKIP ------------------------- */
+.equipe{
+
+    padding: 100px 0px;
+    display: block;
+}
+.equipe__container{
+    width: 90%;
+    margin: 0;
+    padding: 0px 50px;
+}
+.equipe__title{
+    font-size: 34px;
+    margin: 60px 0px 60px 0px;
+}
+.equipe__pages{
+    width: 100%;
+    padding: 50px 0px;
+    justify-content: center;
+}
+.equipe__implique{
+    width: 416px;
+    padding: 50px 30px;
+    height: 632px;
+}
+.equipe__independante{
+    width: 416px;
+    padding: 50px 30px;
+    height: 632px;
+    top: 0;
+    left: 0;
+}
+.equipe__exigeante{
+    width: 416px;
+    padding: 50px 30px;
+    height: 632px;
+
+}
+
+/* FOOTER ------------------------- */
+footer{
+    height: 721px;
+}
+.footer__container{
+    height: auto;
+}
+.footer__listes{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer__list{
+    width: 45%;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 30px;
+}
+}
+
+
+
+
+
+
+
+@media screen and (max-width:768px){
+
+/* EL HEADER ---------------------------------------- */
+header{
+    border-bottom: 1px solid #f1f0f5;
+}
+.header__list{
+    display: none;
+}
+.burger{
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 28px;
+    right: 5%;
+    box-sizing: border-box;
+    padding: 10px;
+    background: url(../exo/img/burger.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.burger:active{
+    background: url(../exo/img/close_mob.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+/* MAIN ---------------------------------------- */
+/* INTRO ---------------------------- */
+
+.section__intro{
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+    padding: 100px 50px;
+
+}
+
+.img{
+    width: 100%;
+}
+
+/* DOMAINES ---------------------------- */
+.domaines__img{
+    display: none;
+}
+.domaines__list{
+    width: 90%;
+    left: 0;
+}
+
+
+/* ACCOMPAGNEMENT ---------------------------- */
+.accompagnement{
+    height: 1740px;
+}
+.accompagnement__item_haut{
+    width:75%;
+    height: 30%;
+}
+.accompagnement__item_bas{
+    width:75%;
+    height: 30%;
+}
+.accompagnement__p{
+    width: 90%;
+}
+
+
+/* EQUIPE ---------------------------- */
+
+.equipe__pages{
+    display: flex;
+    flex-direction: column;
+}
+.equipe__implique{
+    max-width: 80%;
+    margin-bottom: 40px;
+    height: 33%;
+
+}
+.equipe__independante{
+    max-width: 70%;
+    margin-bottom: 40px;
+    height: 33%;
+
+}
+.equipe__exigeante{
+    max-width: 70%;
+    top: 0;
+    left: 0;
+    height: 33%;
+
+}
+
+/* FOOTER ---------------------------- */
+footer{
+    height: 1328px;
+}
+.footer__container{
+    display: block;
+    padding-left: 50px;
+
+}
+.footer__logo{
+    margin: 0;
+    padding-left: 20px;
+    margin-bottom: 60px;
+}
+.footer__listes{
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+}
+
+
+
+
+@media screen and (max-width:425px){
+/* LE MAIN -------------------------------------------- */
+/* INTRO ------------------------- */
+.section__intro{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+}
+.img{
+    width: 100%;
+    margin: 0;
+}
+article{
+    width: 90%;
+    margin-bottom: 40px;
+}
+.section__intro>article>h1{
+    font-size: 32px;
+}
+.intro__list{
+    display: block;
+}
+.intro__company{
+    display: block;
+    width: 95%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    margin-bottom: 10px;
+}
+.intro__expert>.intro__p{
+    display: block;
+    width: 197%;
+    top: 0;
+    left: -62%;
+    text-align: center;
+}
+
+/* VIDEO ------------------------- */
+.section__video{
+    height: 300px;
+}
+.video__bg{
+    width: 25%;
+}
+
+/* Job ------------------------- */
+.job__title{
+    width: 100%;
+    font-size: 34px;
+}
+.job__h3{
+    font-size: 20px;
+}
+
+/* DOMAINES ------------------------- */
+.domaines__list{
+    padding: 15px;
+    width: 95%;
+}
+.domaines__list>li{
+    text-align: left;
+}
+
+/* ACCOMPAGNEMENT ------------------------- */
+.accompagnement{
+    height: 1600px;
+    padding: 5px;
+}
+.accompagnement__title{
+    font-size: 32px;
+}
+.accompagnement__container{
+    width: 95%;
+    padding: 0;
+}
+.accompagnement__item_haut{
+    width: 100%;
+    margin: 0;
+    margin-bottom: 18px;
+    height: 28%;
+}
+.accompagnement__item_bas{
+    width: 100%;
+    margin: 0;
+    margin-bottom: 35px;
+    height: 30%;
+}
+
+/* EQUIPE ------------------------- */
+
+.equipe__container{
+    padding: 20px;
+}
+.equipe__title{
+    font-size: 32px;
+}
+
+.equipe__implique{
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 50px;
+}
+.equipe__independante{
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 50px;
+}
+.equipe__exigeante{
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 0px;
+}
+.equipe__h3{
+    font-size: 26px;
+    padding-left: 40px;
+}
+.equipe__h4{
+    font-size: 16px;
+}
+
+/* FOOTER ------------------------- */
+footer{
+    height: 1528px;
+}
+}
