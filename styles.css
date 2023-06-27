@@ -157,7 +157,7 @@ h3{
 .intro__item{
     font-size: 16px;
     margin: 10px;
-    background: url("img/check.svg") no-repeat center left;
+    background: url("check.svg") no-repeat center left;
     padding-left: 30px;
 }
 
@@ -330,7 +330,7 @@ h3{
 }
 
 .domaines__list>li.recrutement::before{
-    content: url(../exo/img/expertise.svg);
+    content: url(img/expertise.svg);
     position: absolute;
     top: 15px;
     left: 15px;
@@ -338,7 +338,7 @@ h3{
 }
 
 .domaines__list>li.communication::before{
-    content: url(../exo/img/expertise_01.svg);
+    content: url(img/expertise_01.svg);
     position: absolute;
     top: 15px;
     left: 15px;
@@ -348,7 +348,7 @@ h3{
 
 
 .domaines__list>li.conseil::before{
-    content: url(../exo/img/expertise_02.svg);
+    content: url(img/expertise_02.svg);
     position: absolute;
     top: 15px;
     left: 15px;
@@ -356,7 +356,7 @@ h3{
 }
 
 .domaines__list>li.droit::before{
-    content: url(../exo/img/expertise_03.svg);
+    content: url(img/expertise_03.svg);
     position: absolute;
     top: 15px;
     left: 15px;
@@ -364,7 +364,7 @@ h3{
 }
 
 .domaines__list>li.formation::before{
-    content: url(../exo/img/expertise_04.svg);
+    content: url(img/expertise_04.svg);
     position: absolute;
     top: 15px;
     left: 15px;
@@ -373,7 +373,7 @@ h3{
 
 
 .domaines__list>li.paie::before{
-    content: url(../exo/img/expertise_05.svg);
+    content: url(img/expertise_05.svg);
     position: absolute;
     top: 15px;
     left: 15px;
@@ -383,7 +383,7 @@ h3{
 
 
 .domaines__list>li.relations::before{
-    content: url(../exo/img/expertise_06.svg);
+    content: url(img/expertise_06.svg);
     position: absolute;
     top: 15px;
     left: 15px;
@@ -392,7 +392,7 @@ h3{
 
 
 .domaines__list>li.remuneration::before{
-    content: url(../exo/img/expertise_07.svg);
+    content: url(img/expertise_07.svg);
     position: absolute;
     top: 15px;
     left: 15px;
@@ -442,7 +442,7 @@ h3{
     color: white;
 
     background-color: #6461ff;
-    background-image: url("../exo/img/bg-client-01.svg");
+    background-image: url("img/bg-client-01.svg");
     background-repeat: no-repeat;
     background-position: right top;
 
@@ -453,12 +453,12 @@ h3{
 
 .accompagnement__item_haut:nth-child(2) {
     background-color: #01065B;
-    background-image: url("../exo/img/bg-client-02.svg");
+    background-image: url("img/bg-client-02.svg");
   }
 
 .accompagnement__item_haut:nth-child(3) {
     background-color: #0BC1CB;
-    background-image: url("../exo/img/bg-client-03.svg");
+    background-image: url("img/bg-client-03.svg");
   }
 
 .accompagnement__item_bas{
@@ -472,7 +472,7 @@ h3{
     color: white;
 
     background-color: #ffe344;
-    background-image: url("../exo/img/bg-client-04.svg");
+    background-image: url("img/bg-client-04.svg");
     background-repeat: no-repeat;
     background-position: right top;
 
@@ -482,7 +482,7 @@ h3{
 
 .accompagnement__item_bas:nth-child(2) {
     background-color: #DACBB9;
-    background-image: url("../exo/img/bg-client-05.svg");
+    background-image: url("img/bg-client-05.svg");
   }
 
 .accompagnement__item_bas:nth-child(3) {
@@ -507,28 +507,28 @@ h3{
   }
 
 .dominique{
-    background-image: url("../exo/img/avatar-client-01.png");
+    background-image: url("img/avatar-client-01.png");
   }
 
   .elodie {
-    background-image: url("../exo/img/avatar-client-02.png");
+    background-image: url("img/avatar-client-02.png");
 
   }
 
   .thierry {
-    background-image: url("../exo/img/avatar-client-03.png");
+    background-image: url("img/avatar-client-03.png");
   }
 
   .jeanmich {
-    background-image: url("../exo/img/avatar-client-04.png");
+    background-image: url("img/avatar-client-04.png");
   }
 
   .nicolas {
-    background-image: url("../exo/img/avatar-client-05.png");
+    background-image: url("img/avatar-client-05.png");
   }
 
   .katell {
-    background-image: url("../exo/img/avatar-client-06.png");
+    background-image: url("img/avatar-client-06.png");
   }
 
   .accompagnement__p{
@@ -572,7 +572,7 @@ h3{
 
 .equipe{
     background-color: #f1f0f5;
-    background-image: url(../exo/img/bg-advisor.svg);
+    background-image: url(img/bg-advisor.svg);
     background-repeat: no-repeat;
     background-position: right 12%;
     width: 100%;
@@ -630,7 +630,7 @@ h3{
     margin: 0;
     margin-bottom: 32px;
 
-    background-image: url("../exo/img/advisor_01.svg");
+    background-image: url("img/advisor_01.svg");
     background-repeat: no-repeat;
     background-position: left center;
 }
@@ -672,7 +672,7 @@ h3{
 }
 
 .equipe__independante>.equipe__h3{
-    background-image: url("../exo/img/advisor_03.svg");
+    background-image: url("img/advisor_03.svg");
 }
 
 .equipe__exigeante{
@@ -692,7 +692,7 @@ h3{
 }
 
 .equipe__exigeante>.equipe__h3{
-    background-image: url("../exo/img/advisor_02.svg");
+    background-image: url("img/advisor_02.svg");
 }
 
 
@@ -704,7 +704,7 @@ footer{
     height: 461px;
     padding: 100px 0px 150px;
     box-sizing: border-box;
-    background-image: url("../exo/img/bg-footer.png");
+    background-image: url("img/bg-footer.png");
     background-repeat: no-repeat;
     background-position: left bottom;
     display: flex;
@@ -1034,13 +1034,13 @@ header{
     right: 5%;
     box-sizing: border-box;
     padding: 10px;
-    background: url(../exo/img/burger.svg);
+    background: url(img/burger.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
 }
 .burger:active{
-    background: url(../exo/img/close_mob.svg);
+    background: url(img/close_mob.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
